@@ -108,28 +108,25 @@ for name, places in favorite_places.items():
 #6.11
 
 cities = {
-    'karachi': {
-        'country': 'pakistan',
-        'population': 193.2,
-        'nearby mountains': 'geogray',
-        },
-    'mumbai': {
-        'country': 'india',
-        'population': 16368000,
-        'nearby mountains': 'nilgiri',
-      },
-    'kathmandu': {
-        'country': 'nepal',
-        'population': 1003285,
-        'nearby mountains': 'himilaya',
-        }
+
+    "karachi": {
+
+        "country": "Pakistan" , "population": "21.2 million", "fact": "Ecnomical Hub",
+    },
+
+    "islamabad": {
+
+        "country": "Pakistan" , "population": "1.152 million", "fact": "Capital city of Pakistan",
+    },
+
+    "lahore": {
+
+        "country": "Pakistan", "population": "11.13 million", "fact": "Heart of Pakistan",
+    },
     }
+for key, value in cities.items():
 
-for city, city_info in cities.items():
-    country = city_info['country'].title()
-    population = city_info['population']
-    mountains = city_info['nearby mountains'].title()
-
-    print("\n" + city.title() + " is in " + country + ".")
-    print("  It has a population of about " + str(population) + ".")
-    print("  The " + mountains + " mountains are nearby.")
+    a = value["country"]
+    b = value["population"]
+    c = value["fact"]
+    print("City = " +key.title()+ " , Country : " +a+ " , Population " +b+ " , Fact  " +c)
