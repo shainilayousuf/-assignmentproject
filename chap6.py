@@ -15,25 +15,9 @@ glossary = {
 for word, definition in glossary.items():
     print("\n" + word.title() + ": " + definition)
 #6.5
-rivers = {
-    'nile': 'egypt',
-    'mississippi': 'united states',
-    'fraser': 'canada',
-    'kuskokwim': 'alaska',
-    'yangtze': 'china',
-    }
-
-for river, country in rivers.items():
-    print("The " + river.title() + " flows through " + country.title() + ".")
-
-print("\nThe following rivers are included in this data set:")
-for river in rivers.keys():
-    print("- " + river.title())
-
-print("\nThe following countries are included in this data set:")
-for country in rivers.values():
-    print("- " + country.title())
-#6.6
+river = { "nile" : "Egypt" , "Amazon" : "South America" , "Satlaj" : "Pakistan" }
+for key , value in river.items():
+    print("The "  +key.title()+ " runs through " +value.title())
 favorite_languages = {
     'shainila': 'python',
     'mariam': 'c',
@@ -92,38 +76,13 @@ for person in people:
 pets = []
 
 # Make individual pets, and store each one in the list.
-pet = {
-    'animal type': 'python',
-    'name': '',
-    'owner': '',
-    'weight': 43,
-    'eats': 'bugs',
-}
-pets.append(pet)
-
-pet = {
-    'animal type': 'chicken',
-    'name': '',
-    'owner': '',
-    'weight': 2,
-    'eats': 'seeds',
-}
-pets.append(pet)
-
-pet = {
-    'animal type': 'dog',
-    'name': '',
-    'owner': '',
-    'weight': 37,
-    'eats': 'shoes',
-}
-pets.append(pet)
-
-# Display information about each pet.
-for pet in pets:
-    print("\nHere's what I know about " + pet['name'].title() + ":")
-    for key, value in pet.items():
-        print("\t" + key + ": " + str(value))
+cat = {"Persian"  ,  "Sarah"}
+dog = {"Bull Dog"  ,  "Peter"}
+snake = {"Python"  , "Harry"}
+parrot = {"Macaw"  ,  "Suzain"}
+pets = [ cat  ,  dog  ,  snake  ,  parrot]
+for info in pets :
+    print (info)
   #6.9
 favorite_places = {
     'shainila': ['saudi arabia', 'china', 'india'],
